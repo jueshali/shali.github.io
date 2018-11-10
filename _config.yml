@@ -1,0 +1,103 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl: 
+url: https://yangfangs.github.io/
+date_format: "ordinal"
+title: 小小羊
+subtitle: "学会记录和分享"
+description: "小小羊|学会记录和分享"
+keywords: 博客, Yang Fang, bioinformatics
+favicon: /favicon.ico
+timezone: Asia/Chengdu
+encoding: "utf-8"
+source_code: https://github.com/yangfangs/yangfangs.github.io
+
+# --------作者-------- #
+
+author: Yang Fang 
+organization: scu
+organization_url: http://www.scu.edu.cn/
+location: Chengdu, China
+email: yangfangscu@gmail.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /categories/
+    label: 分类
+
+  -
+    href: /wiki/
+    label: 收藏
+
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+# ---------------- #
+#      Socials     #
+# ---------------- #
+
+github_username: yangfangs
+douban_username: false
+facebook_username: false
+weibo_username: yangfang
+zhihu_username: false
+twitter_username: false
+changyan: false
+
+#Comments
+comments_provider: disqus
+duoshuo_username: xiaoxiaoyang
+disqus_username: xiaoxiaoyang
+
+# ---------------- #
+#      Datas       #
+# ---------------- #
+skill_language_keywords: [Java, R, Python]
+skill_field_keywords: [phylogenetic tree, NGS, graph algorithm, bio software develop]
+skill_interested_keywords: [algorithm, statistics, machine learning, deep learning]
+popular_repos: ['physpetools','GFICLEE','PneAnnotaionTool']
+contribute_repos: ['ls-cwi/heinz','leekgroup/tablemaker']
+
